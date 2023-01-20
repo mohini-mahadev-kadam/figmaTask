@@ -1,0 +1,193 @@
+
+
+#header{
+    background-color: aqua;
+   
+}
+
+#logo{
+
+}
+
+#navItem{
+  display: flex;
+  justify-content: end;
+}
+
+#count{
+    background-image: url(./assets/images/bg.png);
+}
+
+
+/*middle1 css starts here-----------------------*/
+
+#middle1{
+    background-color: rgb(230, 203, 171);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    
+}
+
+#feature{
+  display: flex;
+}
+/*middle1 css starts here-----------------------*/
+
+
+/*Restarunts css starts here---------------------*/
+#restaurants{
+  display: flex;
+}
+
+/*Restarunts css ends here---------------------*/
+
+/*Nearest restarunt cdd starts here*/
+#nearRestaurants{
+  display: flex;
+  background-color: #F2F4FA;
+  justify-content: space-between;
+  padding: 4em 1em 4em 8em;
+}
+
+#deliveryAdd{
+  display: flex;
+}
+
+/*Nearest restarunt cdd starts here*/
+
+/*specialities css starts here---------------------*/
+#specialities{
+    display:flex;
+    justify-content: space-between;
+}
+
+.specialImg{
+  box-sizing: border-box;
+  padding: 2%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+  border-radius: 6px;
+  
+}
+/*specialities css ends here---------------------*/
+
+
+
+
+/*map css starts here ---------------------------*/
+
+#map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/images/Mapsicle\ Map.png);
+}
+
+#mapimg{
+  opacity: 0.6;
+}
+
+/*map css ends here ------------------------------*/
+
+/*image grid*/
+#imgGrid2{
+    display: flex;
+    /* justify-content:space-between; */  
+}
+
+/*image grid --------------------------------------*/
+
+
+
+/*footer css --------------------------------------*/
+.row {
+    padding: 1em 1em;
+    background-color: #3F4255;
+  }
+  .row.primary {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    align-items: stretch;
+  }
+  .lastFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  hr{
+    width:65%;
+    color: #D4D7E5;
+    margin-left: 0%;
+    
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #D4D7E5;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #c7940a;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+
+  input,
+  button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  button {
+    background-color: #c7940a;
+    color: #ffffff;
+  }
+
+  div.social {
+    display: flex;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+
+  .social2 img{
+    padding: 1em 1em;
+    
+  }
+
+  .lastFooter .footer-menu a{
+        
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    padding: 1em 1em;
+  }
+
