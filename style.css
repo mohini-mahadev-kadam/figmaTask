@@ -19,6 +19,26 @@
 }
 
 
+#primeHead{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 58px;
+  line-height: 64px;
+  /* or 110% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  /* Gray/Dark */
+
+  color: #3F4255;
+
+}
+
+
+
 /*middle1 css starts here-----------------------*/
 
 #middle1{
@@ -30,6 +50,26 @@
 
 #feature{
   display: flex;
+}
+
+#feature span{
+  /* Text/Defoult */
+
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+
+/* Gray/Dark */
+
+color: #3F4255;
+
 }
 /*middle1 css starts here-----------------------*/
 
@@ -47,6 +87,42 @@
   background-color: #F2F4FA;
   justify-content: space-between;
   padding: 4em 1em 4em 8em;
+}
+
+#nearRestaurants span{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+/* Gray/Dark */
+
+color: #3F4255;
+
+}
+
+#nearRestaurants p{
+  font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.5px;
+
+/* Gray/Dark */
+
+color: #3F4255;
+
 }
 
 #deliveryAdd{
@@ -69,10 +145,61 @@
   border-radius: 6px;
   
 }
+
+#specilityHeading{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 64px;
+  /* or 178% */
+  
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  
+  /* Gray/Dark */
+  
+  color: #3F4255;
+   
+}
+
+figcaption{
+  font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+letter-spacing: 0.5px;
+
+/* Text/Dark */
+
+color: #313030;
+
+}
 /*specialities css ends here---------------------*/
+/*--------------------------------------------------------*/
+feature1{font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  /* Gray/Dark */
+  
+  color: #3F4255;
+  }
 
 
-
+/*--------------------------------------------------------*/
 
 /*map css starts here ---------------------------*/
 
@@ -90,6 +217,41 @@
 /*map css ends here ------------------------------*/
 
 /*image grid*/
+
+.yellowKitchenInsta2{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+/* Gray/second-text */
+
+color: #9093A6;
+
+}
+.yellowKitchenInsta1{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 64px;
+/* identical to box height, or 178% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.08em;
+
+/* Text/Dark */
+
+color: #313030;
+
+}
 #imgGrid2{
     display: flex;
     /* justify-content:space-between; */  
