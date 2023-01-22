@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Community)?node-id=51%3A0&t=ecmtdbmSwxboznvE-0
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Figma Task</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="style.css">
   </head>
+  
   <body>
 	<!--navbar html --------------------->
     <div id="header">
-        <span id="logo">
-            <span><img src="./assets/images/logo.png"></span>
+        <span id="header-logo">
+            <img src="./assets/images/header-logo.png"/>
         </span>
         <span id="navItem">
             <span><img src="./assets/images/person.png">Log in</span>
@@ -20,7 +21,7 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
             <span><img src="./assets/images/ic-menu-navigation.png"></span>
         </span>
     </div>
-    
+    <hr id="header-separator">
 	<!--navbar html --------------------->
     
     <!--roundPlate div-->
@@ -29,9 +30,9 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
             <div>
                 <span id="primeHead">Your Food court at home</span>
             </div>
-            <div>
-                <button>Delivery order in</button>
-                <button>Takeout grab and go</button>
+            <div id="prime_buttons">
+                <div><span class="btn_mainprt">Delivery</span><br><span class="btn_subprt">Order in<span></div>
+                <div><span class="btn_mainprt">Takeout</span><br><span class="btn_subprt">Grab and go</span></div>
             </div>
         </div>
         <div id="roundphoto">
@@ -39,33 +40,40 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
             <span><img src="./assets/images/Photo-plate.png"/></span>
             <span><img src="./assets/images/arrow.png"/>Fresh salad, ll Pasifigio</span>
         </div>
-        <div id="feature">
-            <div>
-                <img src="./assets/images/010   Meal Time.png">
-                <span>
-                    delivery in all paris in less than 30 minutes
-                </span>
-            </div>
-            <div>
-                <img src="./assets/images/delivery.png">
-                <span>
-                    Free delivery from 29 euros
-                </span>
-            </div>
-            <div>
-                <img src="./assets/images/paris.png">
-                <span>
-                    Only fresh and French products
-                </span>
-            </div>
-            
-        </div>
     </div>
+
+    <div id="feature" class="padding10">
+        <div class="feature2" >
+            <img src="./assets/images/010   Meal Time.png">
+            <span>
+                delivery in all paris in less than 30 minutes
+            </span>
+        </div>
+        <div class="feature2">
+            <img src="./assets/images/delivery.png">
+            <span>
+                Free delivery from 29 euros
+            </span>
+        </div>
+        <div class="feature2">
+            <img src="./assets/images/paris.png">
+            <span>
+                Only fresh and French products
+            </span>
+        </div>
+        
+    </div>
+
+    
     <!--roundPlate div ends ---------->
     
+    <div class="headingShowall padding10">
+        <div><span class="specilityHeading">Restaurants</span></div>
+        <div class="showbtn">show all</div>
+    </div>
 
     <!--Restaurants image grid----------------->
-    <div id="restaurants">
+    <div id="restaurants" class="padding10">
         
         <div>
             <span class="foodimg">
@@ -109,7 +117,7 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     
 
     <!--Find you nearest restaurants ----------------->
-    <div id="nearRestaurants">
+    <div id="nearRestaurants" class="padding10">
         <div>
             <span>Your nearest restaurants</span>
             <p>Each kitchen works with its own delievry area to deliver food to you as soon as possible</p>
@@ -124,8 +132,11 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     <!--Find you nearest restaurants ends----------------->
 
     <!--Specialities --------------->
-    <div>
-        <div id="specilityHeading">Specialities</div>
+    <div class="padding10">
+        <div>
+            <span class="specilityHeading">Specialities</span>
+            <span class="showbtn"><button>show all</button></span>
+        </div>
         <div id="specialities">
             <span class="specialImg">
                 <img src="./assets/images/bagel.png">
@@ -172,7 +183,7 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     
 
     <!-- kitchen specialities restaurants transport costs-->
-    <div id="count">
+    <div id="count" class="padding10">
         
         <div>
             <span>1</span>
@@ -198,7 +209,7 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     <!-- kitchen specialities restaurants transport costs ends-------->
     
     <!--map -------------------------->
-    <div id="map">
+    <div id="map" class="padding10 margin10">
         <div>
             <img src="./assets/images/delivary map.png" id="mapimg">
         </div>
@@ -206,9 +217,9 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     <!--map ends----------------------->
 
     <!--YellowLitchens in instagram-->
-    <div>
-        <div class="yellowKitchenInsta1">
-            <span id="yellowKitchenInsta2">YellowKitchens</span> in instagram
+    <div class="padding10">
+        <div id="yellowKitchenInsta1">
+            <span id="yellowKitchenInsta2">YellowKitchens </span> in instagram 
         </div>
         <div id="imgGrid2">
             <div><img src="./assets/images/Rectangle 10.png"></div>
@@ -221,7 +232,9 @@ https://www.figma.com/file/f8JkVCDb7kAdW6isFCNxji/Food-delivery-concept-(Communi
     <div>
         <div class="row primary">
             <div class="column about">
-                <h3>yellowkitchen</h3>
+                <span id="footer-logo">
+                    <img src="./assets/images/footer-logo.png"/>
+                </span>
                 <hr>
                 <div class="social">
                     <img src="./assets/images/app-img1-1.png">

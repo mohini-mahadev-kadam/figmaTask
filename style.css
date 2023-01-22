@@ -1,25 +1,59 @@
 
+/****************** default margin for the body tag will be zero*****************/
+body{
+  margin: 0;;
+}
+
+.padding10{
+  padding-left: 5.75rem;
+  padding-right: 5.75rem;
+}
+
+.margin10{
+  margin:10%;
+}
+
+/****************** main Header styling starts here*****************/
 #header{
-    background: #FFFFFF;
-    height: 72px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  background: #FFFFFF;
+  height: 4.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
    
 }
 
-#logo{
-    flex: 1 1 50%;
+#header-logo{
+  padding-left: 5.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  flex: 1 1 auto;   
+}
+
+#header-logo img{
+  height: 24px;
+  width: 184px;
 }
 
 #navItem{
-    display: flex;
-    gap: 48px;
-    padding-right: 12px;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 4rem;
+  padding-right: 0.75rem;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 5.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
+
+#header-separator{
+  width: 100%;
+  margin:0px;
 }
+
+/****************** main Header styling ends here*****************/
+
 
 #count{
     background-image: url(./assets/images/bg.png);
@@ -30,8 +64,8 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 58px;
-  line-height: 64px;
+  font-size: 3.7rem;
+  line-height: 4rem;
   /* or 110% */
 
   display: flex;
@@ -39,24 +73,74 @@
   letter-spacing: 0.05em;
 
   /* Gray/Dark */
-
   color: #3F4255;
-
+}
+#roundphoto{
+  flex: 0 0 60%;
 }
 
+#prime{
+  padding-left: 92px;
+  padding-top: 192px;
+}
 
+#prime_buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+#prime_buttons div{
+  /* Gray/Dark */
+
+  color: #3F4255;
+  /* Brand/Yellow-Bright */
+
+  border: 2px solid #FFE145;
+  border-radius: 4px;
+
+  padding: 18.5px 24px;
+  align-items: center;
+}
+
+.btn_mainprt{
+  /* Button/text-defoult */
+
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+  letter-spacing: 0.5px;
+}
+
+.btn_subprt{
+  /* Button/text-defoult */
+
+  
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  /* or 125% */
+  letter-spacing: 0.5px;
+}
 
 /*middle1 css starts here-----------------------*/
 
 #middle1{
-    background-color: rgb(230, 203, 171);
     display: grid;
     grid-template-columns: 1fr 3fr;
-    
 }
 
 #feature{
   display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px
 }
 
 #feature span{
@@ -78,12 +162,39 @@ letter-spacing: 0.5px;
 color: #3F4255;
 
 }
+
+#feature span{
+  /* Text/Defoult */
+
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+
+  /* Gray/Dark */
+
+  color: #3F4255;
+
+}
+
+.feature2{
+  display: flex;
+}
 /*middle1 css starts here-----------------------*/
 
 
 /*Restarunts css starts here---------------------*/
 #restaurants{
   display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
 }
 
 /*Restarunts css ends here---------------------*/
@@ -92,48 +203,49 @@ color: #3F4255;
 #nearRestaurants{
   display: flex;
   background-color: #F2F4FA;
-  justify-content: space-between;
+  justify-content:space-evenly;
   padding: 4em 1em 4em 8em;
 }
 
 #nearRestaurants span{
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 64px;
-/* identical to box height, or 178% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 64px;
+  /* identical to box height, or 178% */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
 
-/* Gray/Dark */
+  /* Gray/Dark */
 
-color: #3F4255;
+  color: #3F4255;
 
 }
 
 #nearRestaurants p{
   font-family: 'Martel Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
-/* or 150% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
 
-/* Gray/Dark */
+  /* Gray/Dark */
 
-color: #3F4255;
+  color: #3F4255;
 
 }
 
 #deliveryAdd{
   display: flex;
+  
 }
 
 /*Nearest restarunt cdd starts here*/
@@ -153,7 +265,25 @@ color: #3F4255;
   
 }
 
-#specilityHeading{
+.showbtn{
+  float:right;
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  /* Gray/bg */
+  background: #F2F4FA;
+  border-radius: 4px;
+  border: 2px solid #FFE145;
+}
+
+.headingShowall{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 48px;
+}
+.specilityHeading{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -173,23 +303,24 @@ color: #3F4255;
 
 figcaption{
   font-family: 'Martel Sans';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
 
-text-align: center;
-letter-spacing: 0.5px;
+  text-align: center;
+  letter-spacing: 0.5px;
 
-/* Text/Dark */
+  /* Text/Dark */
 
-color: #313030;
+  color: #313030;
 
 }
 /*specialities css ends here---------------------*/
 /*--------------------------------------------------------*/
-feature1{font-family: 'Poppins';
+feature1{
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -225,7 +356,7 @@ feature1{font-family: 'Poppins';
 
 /*image grid*/
 
-.yellowKitchenInsta2{
+#yellowKitchenInsta2{
   font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
@@ -242,7 +373,7 @@ letter-spacing: 0.08em;
 color: #9093A6;
 
 }
-.yellowKitchenInsta1{
+#yellowKitchenInsta1{
   font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
@@ -335,7 +466,7 @@ color: #313030;
     margin-bottom: 5px;
   }
 
-  button {
+  button1 {
     background-color: #c7940a;
     color: #ffffff;
   }
