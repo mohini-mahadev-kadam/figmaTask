@@ -406,6 +406,70 @@ feature1{
   }
 
 
+.restaruntdiv1{
+  position: relative;
+}
+#arrow11{
+  position:absolute;
+  top:20%;
+  left:57px;
+  border-radius: 30px;
+  padding: 1%;
+  height: 20px;
+  width: 20px;
+
+  background: #FFFFFF;
+  /* Base shadow */
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+
+}
+
+#arrow12{
+  position:absolute;
+  top:20%;
+  right:55px;
+  border-radius: 30px;
+  padding: 1%;
+  height: 20px;
+  width: 20px;
+
+  background: #FFFFFF;
+  /* Base shadow */
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+
+}
+
+
+#arrow13{
+  position:absolute;
+  top:20%;
+  left:-25px;
+  border-radius: 30px;
+  padding: 1%;
+  height: 20px;
+  width: 20px;
+
+  background: #FFFFFF;
+  /* Base shadow */
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+
+}
+
+#arrow14{
+  position:absolute;
+  top:20%;
+  right:-25px;
+  border-radius: 30px;
+  padding: 1%;
+  height: 20px;
+  width: 20px;
+
+  background: #FFFFFF;
+  /* Base shadow */
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+
+}
+
 /*--------------------------------------------------------*/
 
 /*map css starts here ---------------------------*/
