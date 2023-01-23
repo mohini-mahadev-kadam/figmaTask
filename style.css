@@ -191,20 +191,23 @@ color: #3F4255;
 
 /*Restarunts css starts here---------------------*/
 #restaurants{
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
-  align-items: center;
+  padding-bottom: 72px;
 }
 
 /*Restarunts css ends here---------------------*/
 
 /*Nearest restarunt cdd starts here*/
 #nearRestaurants{
-  display: flex;
+  display: grid;
   background-color: #F2F4FA;
-  justify-content:space-evenly;
-  padding: 4em 1em 4em 8em;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 172px;
+  padding-right: 172px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 #nearRestaurants span{
@@ -266,16 +269,15 @@ color: #3F4255;
 }
 
 .showbtn{
-  float:right;
+  float: right;
   font-family: 'Martel Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  /* Gray/bg */
   background: #F2F4FA;
   border-radius: 4px;
-  border: 2px solid #FFE145;
+  padding: 14px 24px;
 }
 
 .headingShowall{
