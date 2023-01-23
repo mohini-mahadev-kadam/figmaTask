@@ -252,7 +252,27 @@ color: #3F4255;
 
 #deliveryAdd{
   display: flex;
-  
+  align-items: center;
+  justify-content: right;
+}
+
+#deliveryAdd input{
+  background: url("./assets/images/loc.png") no-repeat scroll left center #FFFFFF;
+  text-indent: 10px;
+  margin-right: 4px;
+  border: 0px;
+}
+
+#deliveryAdd button{
+  background: #FFE145;
+  border-radius: 4px;
+  border: 0px;
+  font-family: 'Martel sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 /*Nearest restarunt cdd starts here*/
@@ -466,10 +486,8 @@ color: #313030;
   input,
   button {
     font-size: 1em;
-    padding: 1em;
-    width: 100%;
+    padding: 1em;    
     border-radius: 5px;
-    margin-bottom: 5px;
   }
 
   button1 {
