@@ -207,8 +207,7 @@ color: #3F4255;
 
 /*Restarunts css starts here---------------------*/
 
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   #restaurants{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,7 +217,19 @@ color: #3F4255;
   }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 400px){
+  #restaurants{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 72px;
+  }
+}
+
+
+
+@media only screen and (min-width: 700px){
   #restaurants{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -533,7 +544,7 @@ feature1{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
   #imgGrid2{
     display: grid;
     /* justify-content:space-between; */  
@@ -543,7 +554,17 @@ feature1{
   }
 }
 
-@media only screen and (min-width: 600px){
+
+@media only screen and (max-width: 400px){
+  #imgGrid2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 700px){
   #imgGrid2{
     display: grid;
     /* justify-content:space-between; */  
@@ -624,7 +645,7 @@ ul{
   list-style-type: none;
 }
 
-column ul li{
+.column ul li{
     /* Text/Defoult */
     font-family: 'Martel Sans';
     font-style: normal;
@@ -677,15 +698,9 @@ div.social {
   
 }
 
-.lastFooter .footer-menu a{
-      
-  color: #FFFFFF;
-  text-decoration: none;
-  float: right;
-  padding: 1em 1em;
-}
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 700px){
   .row.primary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -697,9 +712,52 @@ div.social {
     grid-template-columns: 1fr 1fr;
 
   }
+
+  .lastFooter .footer-menu a{
+      
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    padding: 1em 1em;
+  }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 400px){
+  .row.primary {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+  }
+  .lastFooter{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .social2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .lastFooter .footer-menu a{
+      
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+}
+
+@media only screen and (min-width: 700px){
   .row.primary {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr;
@@ -709,6 +767,14 @@ div.social {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+  }
+
+  .lastFooter .footer-menu a{
+      
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    padding: 1em 1em;
   }
 }
 
