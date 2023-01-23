@@ -56,7 +56,19 @@ body{
 
 
 #count{
-    background-image: url(./assets/images/bg.png);
+    background: url(./assets/images/bg.png) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 82px;
+    padding-top: 56px;
+    padding-bottom: 45px;
+}
+
+#count div{
+  padding-top: 79px;
+  padding-bottom: 79px;
 }
 
 
@@ -258,9 +270,20 @@ color: #3F4255;
 
 #deliveryAdd input{
   background: url("./assets/images/loc.png") no-repeat scroll left center #FFFFFF;
+  background-position:16px;
   text-indent: 10px;
   margin-right: 4px;
   border: 0px;
+  color: #9093A6;
+  /* Text/Defoult */
+
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  padding: 24px 16px 24px 48px;
 }
 
 #deliveryAdd button{
@@ -273,11 +296,24 @@ color: #3F4255;
   line-height: 20px;
   letter-spacing: 0.5px;
   text-align: center;
+  color: #B79C10;
+  padding: 26px 24px 26px 24px;
 }
 
 /*Nearest restarunt cdd starts here*/
 
 /*specialities css starts here---------------------*/
+
+.specialityMainDiv{
+  padding-top: 99px;
+  padding-bottom: 45px;
+}
+
+.speacialityShowall{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 #specialities{
     display:flex;
     justify-content: space-between;
@@ -287,9 +323,11 @@ color: #3F4255;
   box-sizing: border-box;
   padding: 2%;
   background: #FFFFFF;
-  box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+  box-shadow: 0px 2px 16px rgb(60 62 74 / 8%);
   border-radius: 6px;
-  
+  height: 136px;
+  width: 136px;
+  text-align: center;  
 }
 
 .showbtn{
@@ -302,6 +340,7 @@ color: #3F4255;
   background: #F2F4FA;
   border-radius: 4px;
   padding: 14px 24px;
+  color: #9093A6;
 }
 
 .headingShowall{
@@ -382,43 +421,37 @@ feature1{
 
 /*image grid*/
 
-#yellowKitchenInsta2{
+
+.yellowKitchenInsta{
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 64px;
-/* identical to box height, or 178% */
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 64px;
+  /* identical to box height, or 178% */
 
-display: flex;
-align-items: center;
-letter-spacing: 0.08em;
-
-/* Gray/second-text */
-
-color: #9093A6;
-
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
 }
 #yellowKitchenInsta1{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 64px;
-/* identical to box height, or 178% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.08em;
-
-/* Text/Dark */
-
-color: #313030;
+  /* Gray/second-text */
+  color: #9093A6;
 
 }
+#yellowKitchenInsta2{
+  /* Text/Dark */
+  color: #313030;
+}
 #imgGrid2{
-    display: flex;
+    display: grid;
     /* justify-content:space-between; */  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:1.5rem;
+}
+
+#imgGrid2 img{
+  width: 100%;
 }
 
 /*image grid --------------------------------------*/
@@ -427,9 +460,141 @@ color: #313030;
 
 /*footer css --------------------------------------*/
 .row {
-    padding: 1em 1em;
-    background-color: #3F4255;
+  padding: 1em 1em;
+  background-color: #3F4255;
+ }
+/*.row.primary {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr;
+  align-items: stretch;
+}
+.lastFooter{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+} */
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+hr{
+  width:65%;
+  color: #D4D7E5;
+  margin-left: 0%;
+  
+}
+h3 {
+  width: 100%;
+  text-align: left;
+  color: white;
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  /* list-style: none; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+}
+
+.column div{
+  /* Title/2 */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  /* White */
+  color: #FFFFFF;
+}
+
+ul{
+  list-style-type: none;
+}
+
+column ul li{
+    /* Text/Defoult */
+    font-family: 'Martel Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+
+ul li a {
+  color: #D4D7E5;
+  text-decoration: none;
+  /* Button/text-defoult */
+
+}
+ul li a:hover {
+  color: #c7940a;
+}
+.about p {
+  text-align: justify;
+  line-height: 2;
+  margin: 0;
+}
+
+input,
+button {
+  font-size: 1em;
+  padding: 1em;    
+  border-radius: 5px;
+}
+
+button1 {
+  background-color: #c7940a;
+  color: #ffffff;
+}
+
+div.social {
+  display: flex;
+  font-size: 2.4em;
+  flex-direction: row;
+  margin-top: 0.5em;
+}
+
+.social2 img{
+  padding: 1em 1em;
+  
+}
+
+.lastFooter .footer-menu a{
+      
+  color: #FFFFFF;
+  text-decoration: none;
+  float: right;
+  padding: 1em 1em;
+}
+
+@media only screen and (max-width: 467px){
+  .row.primary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: stretch;
   }
+  .lastFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media only screen and (min-width: 467px){
   .row.primary {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr;
@@ -440,78 +605,5 @@ color: #313030;
     grid-template-columns: 1fr 1fr;
 
   }
-  .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
-    min-height: 15em;
-  }
-  hr{
-    width:65%;
-    color: #D4D7E5;
-    margin-left: 0%;
-    
-  }
-  h3 {
-    width: 100%;
-    text-align: left;
-    color: white;
-    font-size: 1.4em;
-    white-space: nowrap;
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  li:not(:first-child) {
-    margin-top: 0.8em;
-  }
-  ul li a {
-    color: #D4D7E5;
-    text-decoration: none;
-  }
-  ul li a:hover {
-    color: #c7940a;
-  }
-  .about p {
-    text-align: justify;
-    line-height: 2;
-    margin: 0;
-  }
-
-  input,
-  button {
-    font-size: 1em;
-    padding: 1em;    
-    border-radius: 5px;
-  }
-
-  button1 {
-    background-color: #c7940a;
-    color: #ffffff;
-  }
-
-  div.social {
-    display: flex;
-    font-size: 2.4em;
-    flex-direction: row;
-    margin-top: 0.5em;
-  }
-
-  .social2 img{
-    padding: 1em 1em;
-    
-  }
-
-  .lastFooter .footer-menu a{
-        
-    color: #FFFFFF;
-    text-decoration: none;
-    float: right;
-    padding: 1em 1em;
-  }
+}
 
