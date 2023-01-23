@@ -208,7 +208,7 @@ color: #3F4255;
 /*Restarunts css starts here---------------------*/
 
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
   #restaurants{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -218,7 +218,7 @@ color: #3F4255;
   }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 600px){
   #restaurants{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -532,7 +532,8 @@ feature1{
   color: #313030;
 }
 
-@media only screen and (min-width: 600px){
+
+@media only screen and (max-width: 600px){
   #imgGrid2{
     display: grid;
     /* justify-content:space-between; */  
@@ -542,7 +543,7 @@ feature1{
   }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 600px){
   #imgGrid2{
     display: grid;
     /* justify-content:space-between; */  
@@ -550,6 +551,9 @@ feature1{
     gap:1.5rem;
   }
 }
+
+
+
 
 #imgGrid2 img{
   width: 100%;
@@ -681,7 +685,7 @@ div.social {
   padding: 1em 1em;
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
   .row.primary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -695,7 +699,7 @@ div.social {
   }
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 600px){
   .row.primary {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr;
