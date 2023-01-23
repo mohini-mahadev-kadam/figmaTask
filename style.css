@@ -9,10 +9,6 @@ body{
   padding-right: 5.75rem;
 }
 
-.margin10{
-  margin:10%;
-}
-
 /****************** main Header styling starts here*****************/
 #header{
   background: #FFFFFF;
@@ -152,7 +148,15 @@ body{
 #feature{
   display: flex;
   padding-top: 28px;
-  padding-bottom: 28px
+  padding-bottom: 28px;
+
+/* White */
+
+background: #FFFFFF;
+/* Base shadow */
+
+box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+width: 50%;
 }
 
 #feature span{
@@ -161,7 +165,7 @@ body{
 font-family: 'Martel Sans';
 font-style: normal;
 font-weight: 300;
-font-size: 16px;
+font-size: 1rem;
 line-height: 24px;
 /* or 150% */
 
@@ -407,14 +411,18 @@ feature1{
 /*map css starts here ---------------------------*/
 
 #map{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./assets/images/Mapsicle\ Map.png);
+  display: flex;
+  justify-content: center;
 }
 
-#mapimg{
-  opacity: 0.6;
+#map #mapImg{
+  flex: 0 0 100%;
+  background: url(/assets/images/Map.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#mapImg img{
+  opacity: 0;
 }
 
 /*map css ends here ------------------------------*/
