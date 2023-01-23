@@ -206,12 +206,27 @@ color: #3F4255;
 
 
 /*Restarunts css starts here---------------------*/
-#restaurants{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 24px;
-  padding-bottom: 72px;
+
+
+@media only screen and (min-width: 600px){
+  #restaurants{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 72px;
+  }
 }
+
+@media only screen and (min-width: 1000px){
+  #restaurants{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+    padding-bottom: 72px;
+  }
+}
+
 
 /*Restarunts css ends here---------------------*/
 
@@ -498,13 +513,14 @@ feature1{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 36px;
-  line-height: 64px;
+  font-size: 2.25rem;
+    line-height: 4rem;
   /* identical to box height, or 178% */
 
   display: flex;
   align-items: center;
   letter-spacing: 0.08em;
+  flex-wrap: wrap;
 }
 #yellowKitchenInsta1{
   /* Gray/second-text */
@@ -515,11 +531,24 @@ feature1{
   /* Text/Dark */
   color: #313030;
 }
-#imgGrid2{
+
+@media only screen and (min-width: 600px){
+  #imgGrid2{
+    display: grid;
+    /* justify-content:space-between; */  
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  #imgGrid2{
     display: grid;
     /* justify-content:space-between; */  
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:1.5rem;
+  }
 }
 
 #imgGrid2 img{
@@ -652,7 +681,7 @@ div.social {
   padding: 1em 1em;
 }
 
-@media only screen and (max-width: 467px){
+@media only screen and (min-width: 600px){
   .row.primary {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -666,7 +695,7 @@ div.social {
   }
 }
 
-@media only screen and (min-width: 467px){
+@media only screen and (min-width: 1000px){
   .row.primary {
     display: grid;
     grid-template-columns: 4fr 2fr 2fr 2fr;
