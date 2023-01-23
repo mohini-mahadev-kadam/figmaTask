@@ -246,6 +246,10 @@ color: #3F4255;
 
 }
 
+#restaurants img{
+  width: 100%;
+}
+
 #deliveryAdd{
   display: flex;
   
